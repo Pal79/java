@@ -6,7 +6,7 @@ import javax.swing.JFrame;
 
 public class App {
 
-	private JFrame frame;
+	private JFrame frmLottsorsolsvesLeosztsban;
 
 	/**
 	 * Launch the application.
@@ -16,7 +16,7 @@ public class App {
 			public void run() {
 				try {
 					App window = new App();
-					window.frame.setVisible(true);
+					window.frmLottsorsolsvesLeosztsban.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -35,9 +35,11 @@ public class App {
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
-		frame = new JFrame();
-		frame.setBounds(100, 100, 450, 300);
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frmLottsorsolsvesLeosztsban = new JFrame();
+		frmLottsorsolsvesLeosztsban.setTitle("Lottósorsolás éves leosztásban");
+		frmLottsorsolsvesLeosztsban.setBounds(100, 100, 862, 504);
+		frmLottsorsolsvesLeosztsban.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frmLottsorsolsvesLeosztsban.getContentPane().setLayout(null);
 	}
 
 }
