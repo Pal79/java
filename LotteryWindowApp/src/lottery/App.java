@@ -64,6 +64,11 @@ public class App {
 		frmLottsorsolsvesLeosztsban.getContentPane().add(btnNewButton);
 		
 		btnExit = new JButton("EXIT");
+		btnExit.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
 		btnExit.setBounds(78, 467, 85, 21);
 		frmLottsorsolsvesLeosztsban.getContentPane().add(btnExit);
 	}
