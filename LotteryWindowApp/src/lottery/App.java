@@ -3,6 +3,7 @@ package lottery;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 
 public class App {
 
@@ -40,6 +41,10 @@ public class App {
 		frmLottsorsolsvesLeosztsban.setBounds(100, 100, 862, 504);
 		frmLottsorsolsvesLeosztsban.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frmLottsorsolsvesLeosztsban.getContentPane().setLayout(null);
+		
+		JLabel labelRandomNumbers = new JLabel("");
+		labelRandomNumbers.setBounds(10, 10, 160, 447);
+		frmLottsorsolsvesLeosztsban.getContentPane().add(labelRandomNumbers);
 	}
 
 }
