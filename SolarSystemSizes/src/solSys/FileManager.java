@@ -22,6 +22,13 @@ public class FileManager {
 			while(br.ready()) {
 				String row = br.readLine();
 				String[] rowDatas = row.split("\t");
+				
+				SolarSystemSizes solSysObj = new SolarSystemSizes(
+					rowDatas[0],
+					rowDatas[1],
+					rowDatas[2]
+				);
+				solSysSizeList.add(solSysObj);
 			}
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
