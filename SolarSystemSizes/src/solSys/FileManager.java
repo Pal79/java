@@ -30,6 +30,7 @@ public class FileManager {
 				);
 				solSysSizeList.add(solSysObj);
 			}
+			br.close();
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -37,6 +38,6 @@ public class FileManager {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+		return solSysSizeList;
 	}
 }
