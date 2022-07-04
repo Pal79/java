@@ -16,7 +16,29 @@ public class SolarSystemSizes {
 		this.diameter = diameter;
 		this.distance = distance;
 	}
-	
-	
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getDiameter() {
+		return diameter;
+	}
+
+	public void setDiameter(String diameter) {
+		this.diameter = diameter;
+	}
+
+	public String getDistance() {
+		return distance;
+	}
+
+	public void setDistance(String distance) {
+		this.distance = distance;
+	}
 
 }
