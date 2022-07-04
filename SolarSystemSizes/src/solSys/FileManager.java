@@ -18,6 +18,11 @@ public class FileManager {
 			BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(fileName)));
 			
 			String header = br.readLine();
+			
+			while(br.ready()) {
+				String row = br.readLine();
+				String[] rowDatas = row.split("\t");
+			}
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
