@@ -1,0 +1,10 @@
+name	diameter	distance
+Merkúr	N/285	N x 41,6
+Vénusz	N/115	N x 77,7
+Föld	N/109,3	N x 107,4
+Mars	N/205,4	N x 163,7
+Jupiter	N/9,7	N x 559
+Szaturnusz	N/11,6	N x 1030
+Uránusz	N/27,2	N x 2061
+Neptunusz	N/28,1	N x 3230
+Plutó	N/587,6	N x 5296 - N x 3186
