@@ -8,6 +8,8 @@ public class Main {
 		
 		FileManager fmObj = new FileManager();
 		List<SolarSystemSizes> solSysList = fmObj.solSysSize("solarSystemSizes.txt");
+		
+		TaskManager tmObj = new TaskManager();
 
 	}
 
