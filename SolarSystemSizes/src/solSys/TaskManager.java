@@ -13,11 +13,8 @@ public class TaskManager {
 		for(SolarSystemSizes ssList : solSysList) {
 			
 			String diameterReplaceN = ssList.getDiameter().replace("N", sunDiameter);
-			String diameterCommaReplaceDot = diameterReplaceN.replace(",", ".");
-			String[] diameterSplit = diameterCommaReplaceDot.split("/");
-			
-			String distanceReplaceN = ssList.getDistance().replace("N", sunDiameter);
-			String distanceCommaReplaceDot = distanceReplaceN.replace(",", ".");
+			String diameterCommaReplaceToDot = diameterReplaceN.replace(",", ".");
+			String[] diameterSplit = diameterCommaReplaceToDot.split("/");
 			
 			System.out.println("Bolygó neve: " + ssList.getName());
 			System.out.print(ssList.getName() + " átmérője: " + ssList.getDiameter() + " = ");
@@ -34,6 +31,13 @@ public class TaskManager {
 					Double.parseDouble(firstMultiplicationSplit[0]) * Double.parseDouble(firstMultiplicationSplit[1])
 					-
 					Double.parseDouble(secondMultiplicationSplit[0]) * Double.parseDouble(secondMultiplicationSplit[1]) + "km");
+			} else {
+				String distanceReplaceN = ssList.getDistance().replace("N", sunDiameter);
+				String distanceCommaReplaceToDot = distanceReplaceN.replace(",", ".");
+				String[] distanceSplit = distanceCommaReplaceToDot.split("x");
+				
+				System.out.print("A(z) " + ssList.getName() + " naphoz viszonyított távolsága: " + ssList.getDistance() + " = ");
+				System.out.println(Double.parseDouble(distanceSplit[0]) * Double.parseDouble(distanceSplit[1]) + "km");
 			}
 			
 			System.out.println();
