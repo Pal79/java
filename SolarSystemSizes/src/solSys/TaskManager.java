@@ -28,8 +28,13 @@ public class TaskManager {
 				String[] plutoSplit = plutoReplaceN.split("-");
 				String[] firstMultiplicationSplit = plutoSplit[0].split("x");
 				String[] secondMultiplicationSplit = plutoSplit[1].split("x");
+				
+				System.out.print("A(z) " + ssList.getName() + " naphoz viszonyított távolsága: " + ssList.getDistance() + " = ");
+				System.out.println(
+					Double.parseDouble(firstMultiplicationSplit[0]) * Double.parseDouble(firstMultiplicationSplit[1])
+					-
+					Double.parseDouble(secondMultiplicationSplit[0]) * Double.parseDouble(secondMultiplicationSplit[1]) + "km");
 			}
-			System.out.print("A(z) " + ssList.getName() + " naphoz viszonyított távolsága: " + ssList.getDistance() + " = ");
 			
 			System.out.println();
 			
