@@ -26,6 +26,8 @@ public class TaskManager {
 			if(ssList.getName().equals("Plutó")) {
 				String plutoReplaceN = ssList.getDistance().replace("N", sunDiameter);
 				String[] plutoSplit = plutoReplaceN.split("-");
+				String[] firstMultiplicationSplit = plutoSplit[0].split("x");
+				String[] secondMultiplicationSplit = plutoSplit[1].split("x");
 			}
 			System.out.print("A(z) " + ssList.getName() + " naphoz viszonyított távolsága: " + ssList.getDistance() + " = ");
 			
