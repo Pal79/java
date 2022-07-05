@@ -15,8 +15,9 @@ public class FileManager {
 		List<SolarSystemSizes> solSysSizeList = new ArrayList<>();
 		
 		try {
-			BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(fileName)));
+			BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(fileName), "UTF-8"));
 			
+			@SuppressWarnings("unused")
 			String header = br.readLine();
 			
 			while(br.ready()) {
